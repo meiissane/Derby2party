@@ -1,0 +1,22 @@
+{
+  "name": "derby2party",
+  "version": "1.0.0",
+  "description": "Site vitrine et billetterie officielle Derby2party - Watch Parties Football Africain",
+  "main": "server.js",
+  "scripts": {
+    "dev": "node server.js",
+    "start": "node server.js",
+    "build": "node build.js",
+    "preview": "node server.js"
+  },
+  "keywords": [
+    "derby2party",
+    "football",
+    "can",
+    "watchparty",
+    "billetterie",
+    "afrique"
+  ],
+  "author": "Derby2party",
+  "license": "MIT"
+}

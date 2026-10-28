@@ -1,0 +1,13 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# OS Files
+.DS_Store
+Thumbs.db
+
+# Build output
+# dist/ is tracked or untracked depending on deployment preference, standard is untracked
+node_modules/
+.user_uploaded/
