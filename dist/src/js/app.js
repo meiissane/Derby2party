@@ -39,11 +39,12 @@ class App {
 
   async loadData() {
     try {
-      const res = await fetch('/src/data/matchs.json');
+      const res = await fetch('./src/data/matchs.json');
+      if (!res.ok) throw new Error('HTTP ' + res.status);
       this.matchs = await res.json();
     } catch (e) {
       console.warn('Fallback to embedded match data:', e);
-      // Fallback in case of local file protocol
+      // Fallback in case of local file protocol or offline
       this.matchs = [
         {
           id: "civ-sen-2026",
@@ -56,10 +57,114 @@ class App {
           time: "20:45",
           doorsOpen: "19:00",
           location: "Le Ground Control, Paris 12e",
+          address: "81 Rue du Charolais, 75012 Paris",
+          metro: "Gare de Lyon / Montgallet",
           price: 18,
           remainingSeats: 38,
           totalSeats: 280,
-          status: "Dernières places"
+          status: "Dernières places",
+          isFeatured: true,
+          teams: {
+            home: { name: "Côte d'Ivoire", code: "CIV", nickname: "Les Éléphants", colors: ["#F77F00", "#FFFFFF", "#009E60"], accent: "#F77F00" },
+            away: { name: "Sénégal", code: "SEN", nickname: "Les Lions de la Teranga", colors: ["#00853F", "#FDEF42", "#E31B23"], accent: "#00853F" }
+          },
+          perks: ["Écran géant LED 14m² 4K", "DJ Set Amapiano & Coupé Décalé dès 19h", "Alloco, Pastels & Bissap artisanal", "1 boisson offerte par entrée"]
+        },
+        {
+          id: "mar-alg-2026",
+          competition: "Derby",
+          competitionLabel: "Grand Derby d'Afrique du Nord",
+          title: "Maroc vs Algérie",
+          subtitle: "La Fièvre du Maghreb en direct",
+          date: "2026-11-20",
+          formattedDate: "Vendredi 20 Novembre 2026",
+          time: "21:00",
+          doorsOpen: "19:15",
+          location: "La Bellevilloise, Paris 20e",
+          address: "19-21 Rue Boyer, 75020 Paris",
+          metro: "Ménilmontant / Gambetta",
+          price: 20,
+          remainingSeats: 19,
+          totalSeats: 300,
+          status: "Très forte demande",
+          isFeatured: false,
+          teams: {
+            home: { name: "Maroc", code: "MAR", nickname: "Les Lions de l'Atlas", colors: ["#C1272D", "#006233"], accent: "#C1272D" },
+            away: { name: "Algérie", code: "ALG", nickname: "Les Fennecs", colors: ["#006633", "#FFFFFF", "#D21034"], accent: "#006633" }
+          },
+          perks: ["Système son immersif stade 360°", "DJ Set Raï & Bass Music", "Thé à la menthe & Msemens chauds", "Écharpe collector pour les 50 premiers"]
+        },
+        {
+          id: "nga-cmr-2026",
+          competition: "CAN",
+          competitionLabel: "Coupe d'Afrique des Nations",
+          title: "Nigeria vs Cameroun",
+          subtitle: "Le Duel Historique des Super Eagles & Lions Indomptables",
+          date: "2026-11-28",
+          formattedDate: "Samedi 28 Novembre 2026",
+          time: "18:00",
+          doorsOpen: "16:30",
+          location: "Le Hasard Ludique, Paris 18e",
+          address: "128 Avenue de Saint-Ouen, 75018 Paris",
+          metro: "Porte de Saint-Ouen",
+          price: 18,
+          remainingSeats: 62,
+          totalSeats: 220,
+          status: "Disponible",
+          isFeatured: false,
+          teams: {
+            home: { name: "Nigeria", code: "NGA", nickname: "Super Eagles", colors: ["#008751", "#FFFFFF"], accent: "#008751" },
+            away: { name: "Cameroun", code: "CMR", nickname: "Lions Indomptables", colors: ["#007A5E", "#CE1126", "#FCD116"], accent: "#CE1126" }
+          },
+          perks: ["Terrasse couverte & grande salle", "DJ Set Afrobeat & Makossa", "Jollof Rice & Beignets Haricots", "Ambiance tambours en live"]
+        },
+        {
+          id: "cgo-mli-2026",
+          competition: "Qualifs",
+          competitionLabel: "Qualifications Coupe du Monde",
+          title: "RD Congo vs Mali",
+          subtitle: "Choc décisif pour la qualification mondiale",
+          date: "2026-12-06",
+          formattedDate: "Dimanche 6 Décembre 2026",
+          time: "20:00",
+          doorsOpen: "18:30",
+          location: "Le Pavillon Sauvage, Montreuil",
+          address: "45 Rue de Paris, 93100 Montreuil",
+          metro: "Mairie de Montreuil",
+          price: 16,
+          remainingSeats: 84,
+          totalSeats: 250,
+          status: "Disponible",
+          isFeatured: false,
+          teams: {
+            home: { name: "RD Congo", code: "RDC", nickname: "Les Léopards", colors: ["#007FFF", "#FCD116", "#CE1126"], accent: "#007FFF" },
+            away: { name: "Mali", code: "MLI", nickname: "Les Aigles", colors: ["#14B53A", "#FCD116", "#CE1126"], accent: "#14B53A" }
+          },
+          perks: ["Double projection intérieure", "Rumba Congolaise & Afro-House", "Brochettes Suya & Alloco", "Pack groupe avantageux"]
+        },
+        {
+          id: "egy-gha-2026",
+          competition: "Derby",
+          competitionLabel: "Le Classique d'Afrique",
+          title: "Égypte vs Ghana",
+          subtitle: "Les Pharaons face aux Black Stars",
+          date: "2026-12-19",
+          formattedDate: "Samedi 19 Décembre 2026",
+          time: "21:00",
+          doorsOpen: "19:00",
+          location: "Les Docks de Paris, Aubervilliers",
+          address: "50 Avenue du Président Wilson, 93210 La Plaine Saint-Denis",
+          metro: "Front Populaire",
+          price: 22,
+          remainingSeats: 115,
+          totalSeats: 350,
+          status: "Disponible",
+          isFeatured: false,
+          teams: {
+            home: { name: "Égypte", code: "EGY", nickname: "Les Pharaons", colors: ["#C8102E", "#FFFFFF", "#000000"], accent: "#C8102E" },
+            away: { name: "Ghana", code: "GHA", nickname: "Black Stars", colors: ["#EF3340", "#FFD100", "#009739"], accent: "#FFD100" }
+          },
+          perks: ["Écran XXL 20m²", "DJ Battle Afro-Pop vs Electro Chaâbi", "Street Food panafricaine", "Tirage au sort maillots officiels"]
         }
       ];
     }
@@ -205,7 +310,7 @@ class App {
 
               <!-- Animated Pulse Soccer Ball Metaphor -->
               <div class="shrink-0 w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-[#0B3D2E] border border-[#F2B134]/40 flex items-center justify-center p-1.5 shadow-md shadow-[#F2B134]/20 group-hover:scale-110 transition-transform">
-                <img src="/assets/icons/ball-pulse.svg" alt="Ballon cœur battant" class="w-full h-full object-contain">
+                <img src="./assets/icons/ball-pulse.svg" alt="Ballon cœur battant" class="w-full h-full object-contain">
               </div>
 
               <div class="flex-1 text-right min-w-0">

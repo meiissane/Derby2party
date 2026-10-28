@@ -403,7 +403,7 @@ export class TicketingStepper {
                     class="w-5 h-5 rounded accent-[#F2B134] cursor-pointer shrink-0"
                     ${this.hasAllocoPack ? 'checked' : ''}
                   >
-                  <img src="/assets/food.jpg" alt="Option Street Food Alloco" class="w-12 h-12 rounded-xl object-cover shrink-0 border border-white/20 shadow-md">
+                  <img src="./assets/food.jpg" alt="Option Street Food Alloco" class="w-12 h-12 rounded-xl object-cover shrink-0 border border-white/20 shadow-md">
                   <div class="min-w-0">
                     <span class="text-sm font-bold text-[#FAF6EE] block truncate">Option Street Food Box (+7€ / pers.)</span>
                     <p class="text-xs text-[#FAF6EE]/60 truncate">Alloco croustillant, pastels dorés, bowls généreux et sauce douce.</p>
@@ -631,7 +631,7 @@ export class TicketingStepper {
           <!-- GOLDEN TICKET (Billet Doré Stylisé) -->
           <div id="golden-ticket-card" class="golden-ticket relative rounded-3xl p-5 sm:p-8 text-left shadow-2xl overflow-hidden mb-8 border-2 border-[#F2B134]">
             <!-- Wax watermark overlay -->
-            <div class="absolute inset-0 opacity-10 bg-[url('/assets/wax-pattern.svg')] bg-repeat pointer-events-none"></div>
+            <div class="absolute inset-0 opacity-10 bg-[url('./assets/wax-pattern.svg')] bg-repeat pointer-events-none"></div>
             
             <!-- Metallic Sheen Flare -->
             <div class="golden-shimmer absolute inset-0 pointer-events-none"></div>

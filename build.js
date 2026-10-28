@@ -38,6 +38,9 @@ copyRecursive(path.join(ROOT, 'assets'), path.join(DIST, 'assets'));
 fs.copyFileSync(path.join(ROOT, 'index.html'), path.join(DIST, 'index.html'));
 fs.copyFileSync(path.join(ROOT, 'README.md'), path.join(DIST, 'README.md'));
 fs.copyFileSync(path.join(ROOT, 'package.json'), path.join(DIST, 'package.json'));
+if (fs.existsSync(path.join(ROOT, '.nojekyll'))) {
+  fs.copyFileSync(path.join(ROOT, '.nojekyll'), path.join(DIST, '.nojekyll'));
+}
 
 // 3. Calculate file sizes and build statistics
 function getDirStats(dir) {

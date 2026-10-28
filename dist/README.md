@@ -9,16 +9,16 @@
 
 Le site fonctionne immédiatement sans configuration complexe ni dépendances lourdes.
 
-### Lancer le serveur local :
+### Lancer le serveur local ou construire pour la production :
 
 ```bash
-# Avec npm :
+# Développement local (serveur actif sur http://localhost:3000) :
 npm run dev
 # ou
 npm start
 
-# Ou directement avec Node :
-node server.js
+# Construction pour la production (génère le dossier /dist optimisé) :
+npm run build
 ```
 
 Ouvrez ensuite votre navigateur à l'adresse : **`http://localhost:3000`**
@@ -106,3 +106,4 @@ Chaque match est un objet structuré comme suit :
 ---
 
 *Fait avec passion pour la communauté du football africain.*
+# Derby2party

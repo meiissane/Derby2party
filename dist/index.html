@@ -11,11 +11,35 @@
   <meta property="og:title" content="Derby2party | Watch Parties Football Africain">
   <meta property="og:description" content="Le stade vient à vous. Écran géant, musique afrobeat & amapiano, street food et ferveur collective.">
   <meta property="og:type" content="website">
-  <meta property="og:image" content="/assets/hero.jpg">
+  <meta property="og:image" content="./assets/hero.jpg">
 
-  <link rel="icon" type="image/svg+xml" href="/assets/icons/ball-pulse.svg">
-  <link rel="stylesheet" href="/src/css/style.css">
-  <script src="https://www.gstatic.com/antigravity/web/dev/tailwindcss.min.js"></script>
+  <link rel="icon" type="image/svg+xml" href="./assets/icons/ball-pulse.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Sora:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./src/css/style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              green: '#0B3D2E',
+              gold: '#F2B134',
+              red: '#D6402B',
+              dark: '#0E0E0E',
+              cream: '#FAF6EE'
+            }
+          },
+          fontFamily: {
+            heading: ['Sora', 'sans-serif'],
+            sans: ['Inter', 'sans-serif']
+          }
+        }
+      }
+    };
+  </script>
 </head>
 <body class="bg-[#0E0E0E] text-[#FAF6EE] selection:bg-[#F2B134] selection:text-[#0E0E0E]">
 
@@ -27,7 +51,7 @@
         <!-- Brand Logo with Golden Pulse Metaphor -->
         <a href="#" class="flex items-center gap-3 group focus:outline-none" aria-label="Derby2party Accueil">
           <div class="w-10 h-10 rounded-full bg-[#0B3D2E] border border-[#F2B134] flex items-center justify-center p-2 shadow-md shadow-[#F2B134]/20 group-hover:scale-105 transition-transform">
-            <img src="/assets/icons/ball-pulse.svg" alt="" class="w-full h-full object-contain">
+            <img src="./assets/icons/ball-pulse.svg" alt="" class="w-full h-full object-contain">
           </div>
           <div class="flex flex-col">
             <span class="text-xl font-extrabold tracking-tight font-heading text-[#FAF6EE] group-hover:text-[#F2B134] transition-colors">
@@ -89,15 +113,15 @@
     <!-- 1. HERO SECTION -->
     <section class="hero-container" id="hero" aria-label="Accueil Derby2party">
       <!-- Background Video with JPG fallback -->
-      <video autoplay muted loop playsinline poster="/assets/hero.jpg" class="hero-video-bg">
-        <source src="/assets/hero.mp4" type="video/mp4">
+      <video autoplay muted loop playsinline poster="./assets/hero.jpg" class="hero-video-bg">
+        <source src="./assets/hero.mp4" type="video/mp4">
       </video>
 
       <!-- Atmospheric Deep Shadow & Green Gradient Overlay -->
       <div class="hero-overlay"></div>
       
       <!-- Subtle Floating Wax Motif Accents -->
-      <div class="absolute inset-0 opacity-15 bg-[url('/assets/wax-pattern.svg')] bg-repeat pointer-events-none z-10"></div>
+      <div class="absolute inset-0 opacity-15 bg-[url('./assets/wax-pattern.svg')] bg-repeat pointer-events-none z-10"></div>
 
       <div class="relative z-20 max-w-7xl mx-auto px-4 sm:px-8 py-28 sm:py-36 w-full flex flex-col justify-center">
         <div class="max-w-2xl text-left">
@@ -225,10 +249,10 @@
         <!-- Bloc 1 : Écran Géant & Acoustique Immersion -->
         <div class="bg-[#0E0E0E]/80 border border-white/10 rounded-3xl overflow-hidden hover:border-[#F2B134]/40 transition-all duration-300 group flex flex-col reveal-on-scroll">
           <div class="h-72 sm:h-80 relative overflow-hidden bg-[#0B3D2E]/60 flex items-center justify-center">
-            <img src="/assets/concept-a.jpg" alt="Ambiance écran géant et lumière stade" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 opacity-90">
+            <img src="./assets/concept-a.jpg" alt="Ambiance écran géant et lumière stade" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 opacity-90">
             <div class="absolute inset-0 bg-gradient-to-t from-[#0E0E0E] via-transparent to-transparent"></div>
             <div class="absolute top-4 left-4 w-10 h-10 rounded-2xl bg-[#0E0E0E]/90 border border-[#F2B134]/40 flex items-center justify-center p-2 text-[#F2B134] shadow-lg z-10 pointer-events-none">
-              <img src="/assets/icons/screen.svg" alt="" class="w-full h-full">
+              <img src="./assets/icons/screen.svg" alt="" class="w-full h-full">
             </div>
             <div class="absolute bottom-3 left-4 z-10 pointer-events-none">
               <span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-black/75 backdrop-blur-md text-[10px] font-bold text-[#FAF6EE] uppercase tracking-wider border border-white/10">
@@ -261,7 +285,7 @@
               playsinline 
               class="absolute inset-0 w-full h-full object-cover filter blur-xl opacity-40 scale-110 pointer-events-none"
             >
-              <source src="/assets/ambiance.mp4" type="video/mp4">
+              <source src="./assets/ambiance.mp4" type="video/mp4">
             </video>
             
             <div class="absolute inset-0 bg-gradient-to-t from-[#0E0E0E] via-transparent to-black/30 pointer-events-none"></div>
@@ -273,15 +297,15 @@
               muted 
               loop 
               playsinline 
-              poster="/assets/ambiance.jpg" 
+              poster="./assets/ambiance.jpg" 
               class="relative z-10 h-full w-auto max-w-full object-contain mx-auto rounded-2xl shadow-2xl transition-transform duration-300 group-hover:scale-[1.02] cursor-pointer"
               title="Cliquez pour agrandir en HD"
             >
-              <source src="/assets/ambiance.mp4" type="video/mp4">
+              <source src="./assets/ambiance.mp4" type="video/mp4">
             </video>
             
             <div class="absolute top-4 left-4 w-10 h-10 rounded-2xl bg-[#0E0E0E]/90 border border-[#F2B134]/40 flex items-center justify-center p-2 text-[#F2B134] shadow-lg z-20 pointer-events-none">
-              <img src="/assets/icons/dj.svg" alt="" class="w-full h-full">
+              <img src="./assets/icons/dj.svg" alt="" class="w-full h-full">
             </div>
 
             <!-- Contrôles interactifs : Bouton Son Live + Bouton Plein Écran HD -->
@@ -334,10 +358,10 @@
         <!-- Bloc 3 : Street Food Africaine & Alloco Bar (AVEC LA PHOTO RÉELLE ENVOYÉE PAR L'UTILISATEUR) -->
         <div class="bg-[#0E0E0E]/80 border border-white/10 rounded-3xl overflow-hidden hover:border-[#F2B134]/40 transition-all duration-300 group flex flex-col reveal-on-scroll">
           <div class="h-72 sm:h-80 relative overflow-hidden bg-[#24120D] flex items-center justify-center">
-            <img src="/assets/concept-c.jpg" alt="Street food africaine authentique : alloco doré, pastels, mafé bowls et jus de bissap" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+            <img src="./assets/concept-c.jpg" alt="Street food africaine authentique : alloco doré, pastels, mafé bowls et jus de bissap" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
             <div class="absolute inset-0 bg-gradient-to-t from-[#0E0E0E] via-transparent to-transparent"></div>
             <div class="absolute top-4 left-4 w-10 h-10 rounded-2xl bg-[#0E0E0E]/90 border border-[#F2B134]/40 flex items-center justify-center p-2 text-[#F2B134] shadow-lg z-10 pointer-events-none">
-              <img src="/assets/icons/food.svg" alt="" class="w-full h-full">
+              <img src="./assets/icons/food.svg" alt="" class="w-full h-full">
             </div>
             <div class="absolute bottom-3 left-4 z-10 pointer-events-none">
               <span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-black/75 backdrop-blur-md text-[10px] font-bold text-[#FAF6EE] uppercase tracking-wider border border-white/10">
@@ -392,14 +416,14 @@
       <div class="bg-gradient-to-br from-[#0B3D2E] via-[#0E0E0E] to-[#0E0E0E] border border-[#F2B134]/30 rounded-3xl p-8 sm:p-12 relative overflow-hidden shadow-2xl reveal-on-scroll">
         
         <!-- Subtle Wax watermark -->
-        <div class="absolute inset-0 opacity-10 bg-[url('/assets/wax-pattern.svg')] bg-repeat pointer-events-none"></div>
+        <div class="absolute inset-0 opacity-10 bg-[url('./assets/wax-pattern.svg')] bg-repeat pointer-events-none"></div>
 
         <div class="relative z-10 grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
           
           <div class="md:col-span-8 text-left">
             <!-- Scarf & Table Metaphor Icon -->
             <div class="w-12 h-12 rounded-2xl bg-[#0E0E0E] border border-[#F2B134]/40 flex items-center justify-center p-2.5 text-[#F2B134] mb-4 shadow-md">
-              <img src="/assets/icons/table.svg" alt="Table partagée et écharpe" class="w-full h-full object-contain">
+              <img src="./assets/icons/table.svg" alt="Table partagée et écharpe" class="w-full h-full object-contain">
             </div>
 
             <span class="text-xs font-bold text-[#F2B134] uppercase tracking-widest block mb-2">
@@ -465,8 +489,8 @@
           <!-- Metaphor Graphic Side: Vidéo Bannière Watch Party & Table Réservée -->
           <div class="md:col-span-4 text-center">
             <div class="relative w-full max-w-[280px] h-[340px] mx-auto rounded-3xl overflow-hidden border border-[#F2B134]/40 shadow-2xl group">
-              <video autoplay muted loop playsinline poster="/assets/concept-a.jpg" class="w-full h-full object-cover">
-                <source src="/assets/banner.mp4" type="video/mp4">
+              <video autoplay muted loop playsinline poster="./assets/concept-a.jpg" class="w-full h-full object-cover">
+                <source src="./assets/banner.mp4" type="video/mp4">
               </video>
               <div class="absolute inset-0 bg-gradient-to-t from-[#0E0E0E] via-transparent to-black/20 pointer-events-none"></div>
               
@@ -498,7 +522,7 @@
         <div class="space-y-4">
           <div class="flex items-center gap-3">
             <div class="w-8 h-8 rounded-full bg-[#0B3D2E] border border-[#F2B134] flex items-center justify-center p-1.5">
-              <img src="/assets/icons/ball-pulse.svg" alt="" class="w-full h-full object-contain">
+              <img src="./assets/icons/ball-pulse.svg" alt="" class="w-full h-full object-contain">
             </div>
             <span class="text-lg font-extrabold font-heading text-[#FAF6EE]">DERBY<span class="text-[#F2B134]">2</span>PARTY</span>
           </div>
@@ -596,15 +620,15 @@
         loop 
         playsinline 
         controls
-        poster="/assets/ambiance.jpg"
+        poster="./assets/ambiance.jpg"
         class="w-full h-full object-contain bg-black"
       >
-        <source src="/assets/ambiance.mp4" type="video/mp4">
+        <source src="./assets/ambiance.mp4" type="video/mp4">
       </video>
     </div>
   </div>
 
   <!-- Scripts -->
-  <script type="module" src="/src/js/app.js"></script>
+  <script type="module" src="./src/js/app.js"></script>
 </body>
 </html>

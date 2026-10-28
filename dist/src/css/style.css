@@ -51,7 +51,7 @@ body {
 
 /* Global Subtle Wax Watermark Pattern */
 .bg-wax-pattern {
-  background-image: url('/assets/wax-pattern.svg');
+  background-image: url('../../assets/wax-pattern.svg');
   background-repeat: repeat;
   background-size: 140px 140px;
 }
