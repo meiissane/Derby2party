@@ -33,7 +33,16 @@ const server = http.createServer((req, res) => {
     reqPath = '/index.html';
   }
 
-  const filePath = path.join(ROOT, reqPath);
+  let filePath = path.join(ROOT, reqPath);
+
+  // Clean URLs support (e.g. /collection -> /collection.html or /collection/index.html)
+  if (!fs.existsSync(filePath) || fs.statSync(filePath).isDirectory()) {
+    if (fs.existsSync(filePath + '.html')) {
+      filePath = filePath + '.html';
+    } else if (fs.existsSync(path.join(filePath, 'index.html'))) {
+      filePath = path.join(filePath, 'index.html');
+    }
+  }
 
   // Security check: ensure path is within ROOT
   if (!filePath.startsWith(ROOT)) {

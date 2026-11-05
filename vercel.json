@@ -1,0 +1,8 @@
+{
+  "cleanUrls": true,
+  "rewrites": [
+    { "source": "/collection", "destination": "/collection.html" },
+    { "source": "/vip-pass", "destination": "/vip-pass/index.html" },
+    { "source": "/vip-pass/", "destination": "/vip-pass/index.html" }
+  ]
+}

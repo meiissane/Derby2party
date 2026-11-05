@@ -64,18 +64,30 @@
         </a>
 
         <!-- Desktop Navigation Links -->
-        <div class="hidden md:flex items-center gap-8 text-sm font-medium text-[#FAF6EE]/80">
+        <div class="hidden lg:flex items-center gap-7 text-sm font-medium text-[#FAF6EE]/80">
           <a href="#matchs" class="hover:text-[#F2B134] transition-colors">Prochains Matchs</a>
           <a href="#experience" class="hover:text-[#F2B134] transition-colors">L'Ambiance</a>
           <a href="#billetterie" class="hover:text-[#F2B134] transition-colors">Billetterie</a>
           <a href="#parrainage" class="hover:text-[#F2B134] transition-colors">Inviter sa bande</a>
+          <a href="./collection" class="hover:text-[#F2B134] transition-colors flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-[#F2B134]"></span>Collection</a>
         </div>
 
         <!-- Fast CTA Button -->
         <div class="flex items-center gap-3">
+          <!-- VIP Experience Direct Button -->
+          <a 
+            href="./vip-pass/" 
+            class="vip-pass-link hidden sm:inline-flex items-center gap-2 px-4 py-2.5 rounded-full bg-gradient-to-r from-[#0B3D2E] via-[#134e3a] to-[#0B3D2E] text-[#F2B134] border border-[#F2B134]/60 text-xs font-bold uppercase tracking-wider hover:border-[#F2B134] hover:shadow-lg hover:shadow-[#F2B134]/20 transition-all transform hover:scale-105"
+            title="Accéder au VIP Pass et au Prediction Club"
+          >
+            <span class="text-xs">★</span>
+            <span>ENTER THE VIP EXPERIENCE</span>
+            <svg class="w-3.5 h-3.5 opacity-80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          </a>
+
           <a 
             href="#billetterie" 
-            class="hidden sm:inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-[#F2B134] text-[#0E0E0E] text-xs font-bold uppercase tracking-wider hover:bg-[#e2a229] transition-all transform hover:scale-105 shadow-md shadow-[#F2B134]/30"
+            class="hidden md:inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-[#F2B134] text-[#0E0E0E] text-xs font-bold uppercase tracking-wider hover:bg-[#e2a229] transition-all transform hover:scale-105 shadow-md shadow-[#F2B134]/30"
           >
             <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M2 9a3 3 0 0 1 0 6v3a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-3a3 3 0 0 1 0-6V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v3z"/></svg>
             <span>Prendre un billet</span>
@@ -84,7 +96,7 @@
           <!-- Mobile Hamburger Menu Button -->
           <button 
             id="mobile-menu-btn" 
-            class="md:hidden w-10 h-10 rounded-xl bg-white/10 flex items-center justify-center text-[#FAF6EE] hover:bg-white/20 transition-colors"
+            class="lg:hidden w-10 h-10 rounded-xl bg-white/10 flex items-center justify-center text-[#FAF6EE] hover:bg-white/20 transition-colors"
             aria-label="Ouvrir le menu de navigation" 
             aria-expanded="false"
           >
@@ -95,14 +107,22 @@
     </nav>
 
     <!-- Mobile Dropdown Menu -->
-    <div id="mobile-menu" class="hidden md:hidden fixed top-20 left-4 right-4 z-40 bg-[#0E0E0E]/95 backdrop-blur-xl border border-white/15 rounded-3xl p-6 shadow-2xl space-y-4">
+    <div id="mobile-menu" class="hidden lg:hidden fixed top-20 left-4 right-4 z-40 bg-[#0E0E0E]/95 backdrop-blur-xl border border-white/15 rounded-3xl p-6 shadow-2xl space-y-4">
       <a href="#matchs" class="block text-base font-semibold text-[#FAF6EE] hover:text-[#F2B134] py-2 border-b border-white/10">Prochains Matchs</a>
       <a href="#experience" class="block text-base font-semibold text-[#FAF6EE] hover:text-[#F2B134] py-2 border-b border-white/10">L'Expérience & L'Ambiance</a>
       <a href="#billetterie" class="block text-base font-semibold text-[#FAF6EE] hover:text-[#F2B134] py-2 border-b border-white/10">Billetterie & Réservation</a>
       <a href="#parrainage" class="block text-base font-semibold text-[#FAF6EE] hover:text-[#F2B134] py-2 border-b border-white/10">Inviter sa bande</a>
+      <a href="./collection" class="block text-base font-bold text-[#F2B134] py-2 border-b border-white/10">Collection D2P × Maison Château Rouge</a>
+      <a 
+        href="./vip-pass/" 
+        class="vip-pass-link w-full inline-flex items-center justify-center gap-2 py-3.5 rounded-full bg-gradient-to-r from-[#0B3D2E] to-[#134e3a] text-[#F2B134] border border-[#F2B134]/50 font-bold text-xs uppercase tracking-wider mt-2 shadow-lg"
+      >
+        <span>★ ENTER THE VIP EXPERIENCE</span>
+        <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+      </a>
       <a 
         href="#billetterie" 
-        class="w-full inline-flex items-center justify-center gap-2 py-3.5 rounded-full bg-[#F2B134] text-[#0E0E0E] font-bold text-sm uppercase tracking-wider mt-2"
+        class="w-full inline-flex items-center justify-center gap-2 py-3.5 rounded-full bg-[#F2B134] text-[#0E0E0E] font-bold text-sm uppercase tracking-wider"
       >
         Réserver ma place
       </a>
@@ -549,6 +569,8 @@
         <div>
           <h4 class="text-xs font-bold uppercase tracking-wider text-[#FAF6EE] mb-4">L'Expérience</h4>
           <ul class="space-y-2.5 text-xs text-[#FAF6EE]/70">
+            <li><a href="./collection" class="text-[#F2B134] font-semibold hover:underline">Maillots D2P × Maison Château Rouge</a></li>
+            <li><a href="./vip-pass/" class="hover:text-[#F2B134] transition-colors flex items-center gap-1"><span>VIP Pass Experience</span><span class="text-[10px] text-[#F2B134]">★</span></a></li>
             <li><a href="#experience" class="hover:text-[#F2B134] transition-colors">Écran géant 14m² 4K</a></li>
             <li><a href="#experience" class="hover:text-[#F2B134] transition-colors">DJ Sets Afrobeat & Amapiano</a></li>
             <li><a href="#experience" class="hover:text-[#F2B134] transition-colors">Alloco Bar & Pastels Maison</a></li>

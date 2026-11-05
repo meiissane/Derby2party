@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --d2p-obsidian: #050B08;
+  --d2p-night: #0A1510;
+  --d2p-emerald: #0F3828;
+  --d2p-emerald-glow: #10B981;
+  --d2p-gold: #D4AF37;
+  --d2p-gold-bright: #F5C542;
+}
+
+body {
+  background-color: #050B08;
+  color: #F8FAFC;
+  font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  overflow-x: hidden;
+}

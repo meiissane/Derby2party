@@ -36,6 +36,18 @@ console.log('📦 Copying application assets & source files to /dist...');
 copyRecursive(path.join(ROOT, 'src'), path.join(DIST, 'src'));
 copyRecursive(path.join(ROOT, 'assets'), path.join(DIST, 'assets'));
 fs.copyFileSync(path.join(ROOT, 'index.html'), path.join(DIST, 'index.html'));
+if (fs.existsSync(path.join(ROOT, 'collection.html'))) {
+  fs.copyFileSync(path.join(ROOT, 'collection.html'), path.join(DIST, 'collection.html'));
+}
+if (fs.existsSync(path.join(ROOT, 'collection'))) {
+  copyRecursive(path.join(ROOT, 'collection'), path.join(DIST, 'collection'));
+}
+if (fs.existsSync(path.join(ROOT, 'vip-pass'))) {
+  copyRecursive(path.join(ROOT, 'vip-pass'), path.join(DIST, 'vip-pass'));
+}
+if (fs.existsSync(path.join(ROOT, 'vercel.json'))) {
+  fs.copyFileSync(path.join(ROOT, 'vercel.json'), path.join(DIST, 'vercel.json'));
+}
 fs.copyFileSync(path.join(ROOT, 'README.md'), path.join(DIST, 'README.md'));
 fs.copyFileSync(path.join(ROOT, 'package.json'), path.join(DIST, 'package.json'));
 if (fs.existsSync(path.join(ROOT, '.nojekyll'))) {
@@ -79,6 +91,8 @@ const formatSize = (bytes) => {
 // 4. Verify critical assets
 const criticalFiles = [
   'index.html',
+  'collection.html',
+  'vip-pass/index.html',
   'src/data/matchs.json',
   'src/css/style.css',
   'src/js/app.js',

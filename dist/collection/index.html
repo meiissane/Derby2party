@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DERBY2PARTY × MAISON CHÂTEAU ROUGE | Collection Capsule Maillots Officiels</title>
+  <meta name="description" content="Découvrez la collaboration exclusive DERBY2PARTY × MAISON CHÂTEAU ROUGE : le maillot collector connecté de la culture football africaine et du streetwear parisien.">
+  <meta name="theme-color" content="#0B3D2E">
+
+  <!-- OpenGraph / Social Meta -->
+  <meta property="og:title" content="DERBY2PARTY × MAISON CHÂTEAU ROUGE | Capsule Maillots">
+  <meta property="og:description" content="L'énergie du stade rencontre la haute couture populaire de la Goutte d'Or. Maillot collector connecté en édition limitée 001/050.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="./assets/collection/jersey-hero.png">
+
+  <link rel="icon" type="image/svg+xml" href="./assets/icons/ball-pulse.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Sora:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./src/css/style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              green: '#0B3D2E',
+              gold: '#F2B134',
+              red: '#D6402B',
+              dark: '#0E0E0E',
+              cream: '#FAF6EE'
+            }
+          },
+          fontFamily: {
+            heading: ['Sora', 'sans-serif'],
+            sans: ['Inter', 'sans-serif']
+          }
+        }
+      }
+    };
+  </script>
+</head>
+<body class="bg-[#0E0E0E] text-[#FAF6EE] selection:bg-[#F2B134] selection:text-[#0E0E0E] antialiased">
+
+  <!-- ======================================================== -->
+  <!-- NAVBAR -->
+  <!-- ======================================================== -->
+  <header>
+    <nav id="main-navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 py-4 px-4 sm:px-8 flex items-center justify-between border-b border-white/10 bg-[#0E0E0E]/90 backdrop-blur-xl">
+      <div class="max-w-7xl mx-auto w-full flex items-center justify-between">
+        
+        <!-- Brand Logo -->
+        <a href="./" class="flex items-center gap-3 group focus:outline-none" aria-label="Derby2party Accueil">
+          <div class="w-10 h-10 rounded-full bg-[#0B3D2E] border border-[#F2B134] flex items-center justify-center p-2 shadow-md shadow-[#F2B134]/20 group-hover:scale-105 transition-transform">
+            <img src="./assets/icons/ball-pulse.svg" alt="" class="w-full h-full object-contain">
+          </div>
+          <div class="flex flex-col">
+            <span class="text-xl font-extrabold tracking-tight font-heading text-[#FAF6EE] group-hover:text-[#F2B134] transition-colors">
+              DERBY<span class="text-[#F2B134]">2</span>PARTY
+            </span>
+            <span class="text-[10px] uppercase tracking-widest text-[#FAF6EE]/60 font-semibold -mt-1">
+              Watch Parties Football Africain
+            </span>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation Links -->
+        <div class="hidden lg:flex items-center gap-7 text-sm font-medium text-[#FAF6EE]/80">
+          <a href="./" class="hover:text-[#F2B134] transition-colors">Accueil</a>
+          <a href="./#matchs" class="hover:text-[#F2B134] transition-colors">Prochains Matchs</a>
+          <a href="./#experience" class="hover:text-[#F2B134] transition-colors">L'Ambiance</a>
+          <a href="./#billetterie" class="hover:text-[#F2B134] transition-colors">Billetterie</a>
+          <a href="./collection" class="text-[#F2B134] font-bold flex items-center gap-1.5 transition-colors">
+            <span class="w-1.5 h-1.5 rounded-full bg-[#F2B134] animate-pulse"></span>
+            Collection D2P × MCR
+          </a>
+        </div>
+
+        <!-- Action CTAs -->
+        <div class="flex items-center gap-3">
+          <!-- VIP Experience Button -->
+          <a 
+            href="./vip-pass/" 
+            class="vip-pass-link hidden sm:inline-flex items-center gap-2 px-4 py-2.5 rounded-full bg-gradient-to-r from-[#0B3D2E] via-[#134e3a] to-[#0B3D2E] text-[#F2B134] border border-[#F2B134]/60 text-xs font-bold uppercase tracking-wider hover:border-[#F2B134] hover:shadow-lg hover:shadow-[#F2B134]/20 transition-all transform hover:scale-105"
+            title="Accéder au VIP Pass et au Prediction Club"
+          >
+            <span class="text-xs">★</span>
+            <span>ENTER THE VIP EXPERIENCE</span>
+            <svg class="w-3.5 h-3.5 opacity-80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          </a>
+
+          <!-- Standard Match Ticket CTA -->
+          <a 
+            href="./#billetterie" 
+            class="hidden md:inline-flex items-center gap-2 px-4 py-2.5 rounded-full bg-[#FAF6EE] text-[#0E0E0E] text-xs font-bold uppercase tracking-wider hover:bg-[#F2B134] transition-all transform hover:scale-105 shadow-md"
+          >
+            <span>Prendre un billet</span>
+          </a>
+
+          <!-- Mobile Hamburger Menu Button -->
+          <button 
+            id="mobile-menu-btn" 
+            class="lg:hidden w-10 h-10 rounded-xl bg-white/10 flex items-center justify-center text-[#FAF6EE] hover:bg-white/20 transition-colors"
+            aria-label="Ouvrir le menu de navigation" 
+            aria-expanded="false"
+          >
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"/></svg>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Mobile Dropdown Menu -->
+    <div id="mobile-menu" class="hidden lg:hidden fixed top-20 left-4 right-4 z-40 bg-[#0E0E0E]/95 backdrop-blur-xl border border-white/15 rounded-3xl p-6 shadow-2xl space-y-4">
+      <a href="./" class="block text-base font-semibold text-[#FAF6EE] hover:text-[#F2B134] py-2 border-b border-white/10">Accueil</a>
+      <a href="./#matchs" class="block text-base font-semibold text-[#FAF6EE] hover:text-[#F2B134] py-2 border-b border-white/10">Prochains Matchs</a>
+      <a href="./#experience" class="block text-base font-semibold text-[#FAF6EE] hover:text-[#F2B134] py-2 border-b border-white/10">L'Ambiance Watch Party</a>
+      <a href="./#billetterie" class="block text-base font-semibold text-[#FAF6EE] hover:text-[#F2B134] py-2 border-b border-white/10">Billetterie & Réservation</a>
+      <a href="./collection" class="block text-base font-bold text-[#F2B134] py-2 border-b border-white/10">Collection D2P × MCR</a>
+      
+      <!-- Mobile VIP CTA -->
+      <a 
+        href="./vip-pass/" 
+        class="vip-pass-link w-full inline-flex items-center justify-center gap-2 py-3.5 rounded-full bg-gradient-to-r from-[#0B3D2E] to-[#134e3a] text-[#F2B134] border border-[#F2B134]/50 font-bold text-xs uppercase tracking-wider mt-3 shadow-lg"
+      >
+        <span>★ ENTER THE VIP EXPERIENCE</span>
+        <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+      </a>
+
+      <a 
+        href="./#billetterie" 
+        class="w-full inline-flex items-center justify-center gap-2 py-3.5 rounded-full bg-[#FAF6EE] text-[#0E0E0E] font-bold text-xs uppercase tracking-wider"
+      >
+        Réserver une place de match
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <!-- ======================================================== -->
+    <!-- 1. HERO COLLABORATION SECTION -->
+    <!-- ======================================================== -->
+    <section class="relative pt-32 sm:pt-40 pb-20 px-4 sm:px-8 overflow-hidden">
+      <!-- Wax subtle pattern background -->
+      <div class="absolute inset-0 opacity-10 bg-[url('./assets/wax-pattern.svg')] bg-repeat pointer-events-none"></div>
+      
+      <!-- Ambient light spotlights -->
+      <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-[#F2B134]/10 rounded-full blur-[140px] pointer-events-none"></div>
+      <div class="absolute top-1/3 left-1/4 w-[400px] h-[400px] bg-[#0B3D2E]/40 rounded-full blur-[120px] pointer-events-none"></div>
+
+      <div class="relative z-10 max-w-7xl mx-auto">
+        
+        <!-- Header Pill Badge -->
+        <div class="text-center max-w-3xl mx-auto mb-8">
+          <div class="inline-flex items-center gap-2.5 px-4 py-2 rounded-full bg-[#0B3D2E]/90 border border-[#F2B134]/50 text-[#FAF6EE] mb-6 shadow-xl backdrop-blur-md">
+            <span class="w-2.5 h-2.5 rounded-full bg-[#F2B134] animate-ping"></span>
+            <span class="text-xs font-bold uppercase tracking-widest text-[#F2B134]">Collaboration Exclusive</span>
+            <span class="text-xs text-[#FAF6EE]/60">• Série Limitée 001/050</span>
+          </div>
+
+          <!-- Main Headline -->
+          <h1 class="text-3xl sm:text-5xl lg:text-6xl font-black text-[#FAF6EE] font-heading tracking-tight leading-[1.1] mb-6">
+            DERBY2PARTY <br class="hidden sm:block">
+            <span class="text-transparent bg-clip-text bg-gradient-to-r from-[#F2B134] via-[#FAF6EE] to-[#F2B134]">
+              × MAISON CHÂTEAU ROUGE
+            </span>
+          </h1>
+
+          <p class="text-base sm:text-lg text-[#FAF6EE]/80 leading-relaxed max-w-2xl mx-auto font-sans">
+            Quand la ferveur vibrante du football africain rencontre la haute couture populaire du 18e arrondissement. Un maillot d'exception pensé pour les soirs de ferveur, le bitume et la troisième mi-temps.
+          </p>
+
+          <!-- Quick Actions -->
+          <div class="mt-8 flex flex-wrap items-center justify-center gap-4">
+            <a 
+              href="#showcase" 
+              class="px-7 py-3.5 rounded-full bg-[#F2B134] text-[#0E0E0E] text-xs font-extrabold uppercase tracking-wider hover:bg-[#e2a229] transition-all transform hover:scale-105 shadow-xl shadow-[#F2B134]/20"
+            >
+              Découvrir la pièce
+            </a>
+            <a 
+              href="./vip-pass/" 
+              class="vip-pass-link px-7 py-3.5 rounded-full bg-black/60 border border-[#F2B134]/40 text-[#F2B134] text-xs font-bold uppercase tracking-wider hover:bg-black/90 hover:border-[#F2B134] transition-all shadow-md flex items-center gap-2"
+            >
+              <span>★ ENTER THE VIP EXPERIENCE</span>
+              <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- ======================================================== -->
+        <!-- 2. MAIN JERSEY SHOWCASE (HERO SPOTLIGHT) -->
+        <!-- ======================================================== -->
+        <div id="showcase" class="mt-12 relative rounded-3xl overflow-hidden border border-white/10 bg-gradient-to-b from-[#111613] via-[#0E0E0E] to-[#0A0A0A] p-4 sm:p-10 shadow-2xl">
+          
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+            
+            <!-- Hero Spotlight Image -->
+            <div class="lg:col-span-7 relative group">
+              <div class="relative w-full aspect-[16/10] sm:aspect-[16/9] rounded-2xl overflow-hidden bg-black/50 border border-white/10 shadow-2xl flex items-center justify-center">
+                <img 
+                  src="./assets/collection/jersey-hero.png" 
+                  alt="Maillot officiel DERBY2PARTY × MAISON CHÂTEAU ROUGE sur socle stadium" 
+                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
+                >
+                <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent pointer-events-none"></div>
+                
+                <!-- Floating badge on photo -->
+                <div class="absolute bottom-4 left-4 z-10">
+                  <span class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-black/85 backdrop-blur-md border border-[#F2B134]/40 text-xs font-bold text-[#FAF6EE]">
+                    <span class="w-2 h-2 rounded-full bg-[#F2B134] animate-pulse"></span>
+                    Vue Frontale Officielle • Drop 001
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Jersey Story & Key Points -->
+            <div class="lg:col-span-5 text-left space-y-6">
+              <div>
+                <span class="text-xs font-bold uppercase tracking-widest text-[#F2B134] block mb-2">
+                  L'Identité de la Pièce
+                </span>
+                <h2 class="text-2xl sm:text-3xl font-black text-[#FAF6EE] font-heading leading-tight">
+                  Maillot Supporter Haute Énergie
+                </h2>
+                <p class="text-xs text-[#FAF6EE]/60 uppercase tracking-widest mt-1">
+                  Édition Limitée Numérotée • 50 Exemplaires Monde
+                </p>
+              </div>
+
+              <p class="text-sm text-[#FAF6EE]/80 leading-relaxed">
+                Inspiré des tenues légendaires des sélections africaines et retravaillé avec le langage graphique unique de Maison Château Rouge. La base noir profond sert d'écrin à des aplats géométriques wax aux tons safran, ocre et jaune solaire.
+              </p>
+
+              <!-- Feature Bullets -->
+              <div class="space-y-3 pt-2">
+                <div class="flex items-start gap-3 p-3 rounded-2xl bg-white/5 border border-white/10">
+                  <div class="w-7 h-7 rounded-xl bg-[#0B3D2E] text-[#F2B134] flex items-center justify-center shrink-0 text-sm font-bold mt-0.5">
+                    ✓
+                  </div>
+                  <div>
+                    <h4 class="text-xs font-bold text-[#FAF6EE]">Textile Athlétique Respirant</h4>
+                    <p class="text-[11px] text-[#FAF6EE]/70">Mesh technique ultra-léger développé pour l'intensité du jeu et le confort quotidien.</p>
+                  </div>
+                </div>
+
+                <div class="flex items-start gap-3 p-3 rounded-2xl bg-white/5 border border-white/10">
+                  <div class="w-7 h-7 rounded-xl bg-[#0B3D2E] text-[#F2B134] flex items-center justify-center shrink-0 text-sm font-bold mt-0.5">
+                    ✓
+                  </div>
+                  <div>
+                    <h4 class="text-xs font-bold text-[#FAF6EE]">Graphisme Wax Géométrique</h4>
+                    <p class="text-[11px] text-[#FAF6EE]/70">Motif asymétrique exclusif MCR symbolisant la trajectoire du ballon et les lignes du terrain.</p>
+                  </div>
+                </div>
+
+                <div class="flex items-start gap-3 p-3 rounded-2xl bg-white/5 border border-[#F2B134]/30 bg-[#0B3D2E]/20">
+                  <div class="w-7 h-7 rounded-xl bg-[#F2B134] text-[#0E0E0E] flex items-center justify-center shrink-0 text-xs font-black mt-0.5">
+                    NFC
+                  </div>
+                  <div>
+                    <h4 class="text-xs font-bold text-[#F2B134]">Étiquette Tissée Connectée (Phygital)</h4>
+                    <p class="text-[11px] text-[#FAF6EE]/80">Puce NFC et QR code intégrés débloquant l'accès au VIP Pass & au Prediction Club.</p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION SEPARATOR WAX MOTIF -->
+    <div class="wax-separator"></div>
+
+    <!-- ======================================================== -->
+    <!-- 3. CRAFTSMANSHIP & DETAILS (THE 4 HIGHLIGHTS) -->
+    <!-- ======================================================== -->
+    <section class="py-20 px-4 sm:px-8 max-w-7xl mx-auto">
+      
+      <div class="text-center max-w-2xl mx-auto mb-14">
+        <span class="text-xs font-bold text-[#F2B134] uppercase tracking-widest block mb-2">
+          L'Anatomie du Drop
+        </span>
+        <h2 class="text-2xl sm:text-4xl font-black text-[#FAF6EE] font-heading leading-tight">
+          Chaque détail raconte une histoire
+        </h2>
+        <p class="text-[#FAF6EE]/70 text-sm sm:text-base mt-3">
+          De la confection du tissu au certificat numérique, découvrez les éléments signature de la capsule.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        
+        <!-- Detail 1 : Puce NFC et QR Tag -->
+        <article class="bg-[#0E0E0E]/90 border border-white/10 rounded-3xl overflow-hidden hover:border-[#F2B134]/50 transition-all duration-300 group flex flex-col shadow-xl">
+          <div class="h-64 sm:h-72 relative overflow-hidden bg-black/60">
+            <img 
+              src="./assets/collection/jersey-nfc-tag.jpg" 
+              alt="Scan du tag NFC tissé sur le maillot Derby2party" 
+              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+            >
+            <div class="absolute inset-0 bg-gradient-to-t from-[#0E0E0E] via-transparent to-transparent"></div>
+            <div class="absolute top-4 left-4 px-2.5 py-1 rounded-full bg-black/80 backdrop-blur-md text-[10px] font-bold text-[#F2B134] border border-[#F2B134]/30 uppercase tracking-wider">
+              Smart Patch Tissé
+            </div>
+          </div>
+          <div class="p-6 flex-1 flex flex-col justify-between">
+            <div>
+              <h3 class="text-lg font-bold text-[#FAF6EE] font-heading mb-2">Puce NFC & Tag Phygital</h3>
+              <p class="text-xs text-[#FAF6EE]/70 leading-relaxed">
+                Cousu sur le bas de chaque pièce, le patch brodé dissimule une puce sans contact. Il suffit d'approcher un smartphone pour authentifier la pièce et déverrouiller son Pass VIP numérique.
+              </p>
+            </div>
+            <div class="pt-4 mt-4 border-t border-white/10 text-xs text-[#F2B134] font-semibold flex items-center justify-between">
+              <span>Numérotation 001 / 050</span>
+              <span class="text-[11px] opacity-75">Scan sans application</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Detail 2 : Le Coffret Collector Prestige -->
+        <article class="bg-[#0E0E0E]/90 border border-white/10 rounded-3xl overflow-hidden hover:border-[#F2B134]/50 transition-all duration-300 group flex flex-col shadow-xl">
+          <div class="h-64 sm:h-72 relative overflow-hidden bg-black/60">
+            <img 
+              src="./assets/collection/jersey-box.jpg" 
+              alt="Coffret prestige collector avec maillot plié et carte VIP dorée" 
+              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+            >
+            <div class="absolute inset-0 bg-gradient-to-t from-[#0E0E0E] via-transparent to-transparent"></div>
+            <div class="absolute top-4 left-4 px-2.5 py-1 rounded-full bg-black/80 backdrop-blur-md text-[10px] font-bold text-[#F2B134] border border-[#F2B134]/30 uppercase tracking-wider">
+              Écrin Prestige
+            </div>
+          </div>
+          <div class="p-6 flex-1 flex flex-col justify-between">
+            <div>
+              <h3 class="text-lg font-bold text-[#FAF6EE] font-heading mb-2">Le Coffret Collector & Carte Dorée</h3>
+              <p class="text-xs text-[#FAF6EE]/70 leading-relaxed">
+                Chaque maillot est livré dans un coffret rigide grand format orné du ruban de wax collector, accompagné de sa carte de membre physique en métal doré embossé au ballon Derby2party.
+              </p>
+            </div>
+            <div class="pt-4 mt-4 border-t border-white/10 text-xs text-[#F2B134] font-semibold flex items-center justify-between">
+              <span>Packaging numéroté</span>
+              <span class="text-[11px] opacity-75">Carte VIP physique incluse</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Detail 3 : Le VIP Pass Digital sur Mobile -->
+        <article class="bg-[#0E0E0E]/90 border border-white/10 rounded-3xl overflow-hidden hover:border-[#F2B134]/50 transition-all duration-300 group flex flex-col shadow-xl">
+          <div class="h-64 sm:h-72 relative overflow-hidden bg-black/60">
+            <img 
+              src="./assets/collection/vip-pass-mobile.jpg" 
+              alt="VIP Pass Culture Drop 001 et Prediction Club sur smartphone" 
+              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+            >
+            <div class="absolute inset-0 bg-gradient-to-t from-[#0E0E0E] via-transparent to-transparent"></div>
+            <div class="absolute top-4 left-4 px-2.5 py-1 rounded-full bg-black/80 backdrop-blur-md text-[10px] font-bold text-[#F2B134] border border-[#F2B134]/30 uppercase tracking-wider">
+              Expérience Web3
+            </div>
+          </div>
+          <div class="p-6 flex-1 flex flex-col justify-between">
+            <div>
+              <h3 class="text-lg font-bold text-[#FAF6EE] font-heading mb-2">Le Pass Digital & Prediction Club</h3>
+              <p class="text-xs text-[#FAF6EE]/70 leading-relaxed">
+                Le maillot ouvre les portes du club digital de Derby2party : pronostics exclusifs sur les affiches africaines, classement des supporters, badges de prestige et récompenses au bar.
+              </p>
+            </div>
+            <div class="pt-4 mt-4 border-t border-white/10 text-xs text-[#F2B134] font-semibold flex items-center justify-between">
+              <span>Pronostics en direct</span>
+              <span class="text-[11px] opacity-75">Classement des membres</span>
+            </div>
+          </div>
+        </article>
+
+      </div>
+
+    </section>
+
+    <!-- SECTION SEPARATOR WAX MOTIF -->
+    <div class="wax-separator"></div>
+
+    <!-- ======================================================== -->
+    <!-- 4. L'HISTOIRE DE LA COLLABORATION (EDITORIAL) -->
+    <!-- ======================================================== -->
+    <section class="py-20 px-4 sm:px-8 max-w-5xl mx-auto">
+      <div class="bg-gradient-to-br from-[#0B3D2E] via-[#0E0E0E] to-[#0E0E0E] border border-[#F2B134]/40 rounded-3xl p-8 sm:p-14 relative overflow-hidden shadow-2xl">
+        <div class="absolute inset-0 opacity-10 bg-[url('./assets/wax-pattern.svg')] bg-repeat pointer-events-none"></div>
+
+        <div class="relative z-10 text-left max-w-3xl">
+          <span class="text-xs font-bold text-[#F2B134] uppercase tracking-widest block mb-2">
+            Manifeste Collaboratif
+          </span>
+          <h2 class="text-2xl sm:text-4xl font-black text-[#FAF6EE] font-heading leading-tight mb-6">
+            "Le maillot n'est pas seulement une tenue de match. C'est notre étendard."
+          </h2>
+
+          <div class="space-y-4 text-sm sm:text-base text-[#FAF6EE]/80 leading-relaxed">
+            <p>
+              Fondée par <strong>Youssouf Fofana</strong> dans le 18e arrondissement de Paris, <strong>Maison Château Rouge</strong> raconte depuis toujours la richesse du dialogue entre l'Afrique et sa diaspora à travers le prisme de la mode et de l'art populaire.
+            </p>
+            <p>
+              De son côté, <strong>Derby2party</strong> rassemble chaque week-end des centaines de passionnés autour des derbys et des coupes africaines, recréant l'atmosphère incandescente des grands stades du continent au cœur de la capitale.
+            </p>
+            <p>
+              Cette collaboration scelle cette énergie commune : une pièce de collection qui transcende le simple vêtement sportif pour devenir une invitation permanente à célébrer le football en collectif.
+            </p>
+          </div>
+
+          <div class="pt-8 mt-8 border-t border-white/10 flex flex-wrap items-center gap-6 text-xs text-[#FAF6EE]/60">
+            <div>
+              <span class="block text-white font-bold text-sm">Paris 18e &middot; Goutte d'Or</span>
+              <span>Design & Direction Créative</span>
+            </div>
+            <div class="hidden sm:block text-white/30">&bull;</div>
+            <div>
+              <span class="block text-white font-bold text-sm">Série Limitée</span>
+              <span>50 Pièces Numérotées</span>
+            </div>
+            <div class="hidden sm:block text-white/30">&bull;</div>
+            <div>
+              <span class="block text-white font-bold text-sm">Pass Connecté</span>
+              <span>NFC & Web3 Readiness</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION SEPARATOR WAX MOTIF -->
+    <div class="wax-separator"></div>
+
+    <!-- ======================================================== -->
+    <!-- 5. CALL TO ACTION : ENTER THE VIP EXPERIENCE -->
+    <!-- ======================================================== -->
+    <section class="py-24 px-4 sm:px-8 max-w-5xl mx-auto text-center" id="vip-experience">
+      <div class="bg-gradient-to-b from-[#111c16] via-[#0E0E0E] to-[#0A0A0A] border-2 border-[#F2B134]/60 rounded-3xl p-8 sm:p-14 relative overflow-hidden shadow-2xl">
+        
+        <!-- Glowing aura -->
+        <div class="absolute inset-0 opacity-15 bg-[url('./assets/wax-pattern.svg')] bg-repeat pointer-events-none"></div>
+        <div class="golden-shimmer absolute inset-0 pointer-events-none"></div>
+
+        <div class="relative z-10 max-w-2xl mx-auto">
+          
+          <div class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-[#0B3D2E] border-2 border-[#F2B134] text-[#F2B134] text-2xl font-bold mb-6 shadow-xl shadow-[#F2B134]/20 animate-bounce">
+            ★
+          </div>
+
+          <span class="text-xs font-bold text-[#F2B134] uppercase tracking-widest block mb-2">
+            La Passerelle Numérique
+          </span>
+          <h2 class="text-3xl sm:text-5xl font-black text-[#FAF6EE] font-heading leading-tight mb-4">
+            Entrez dans l'Expérience VIP
+          </h2>
+          <p class="text-sm sm:text-base text-[#FAF6EE]/80 leading-relaxed mb-8">
+            Activez votre carte digitale, pronostiquez sur les prochains derbys africains, suivez votre classement et déverrouillez les privilèges exclusifs réservés aux détenteurs du Pass.
+          </p>
+
+          <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+            <a 
+              href="./vip-pass/" 
+              class="vip-pass-link w-full sm:w-auto inline-flex items-center justify-center gap-3 px-8 py-4 rounded-full bg-[#F2B134] text-[#0E0E0E] font-black text-sm uppercase tracking-wider hover:bg-[#e2a229] transition-all transform hover:scale-105 shadow-2xl shadow-[#F2B134]/30"
+            >
+              <span>ENTER THE VIP EXPERIENCE</span>
+              <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            </a>
+
+            <a 
+              href="./#billetterie" 
+              class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full bg-white/10 text-[#FAF6EE] border border-white/20 font-bold text-xs uppercase tracking-wider hover:bg-white/20 transition-all"
+            >
+              Prendre un billet Watch Party
+            </a>
+          </div>
+
+          <p class="text-[11px] text-[#FAF6EE]/50 mt-6">
+            Le second site VIP Pass & Prediction Club s'ouvre dans un nouvel onglet sécurisé.
+          </p>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ======================================================== -->
+  <!-- 6. FOOTER -->
+  <!-- ======================================================== -->
+  <footer class="bg-[#0E0E0E] border-t border-white/10 pt-16 pb-12 px-4 sm:px-8 text-sm">
+    <div class="max-w-7xl mx-auto">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-10 mb-12">
+        
+        <!-- Brand column -->
+        <div class="space-y-4">
+          <div class="flex items-center gap-3">
+            <div class="w-8 h-8 rounded-full bg-[#0B3D2E] border border-[#F2B134] flex items-center justify-center p-1.5">
+              <img src="./assets/icons/ball-pulse.svg" alt="" class="w-full h-full object-contain">
+            </div>
+            <span class="text-lg font-extrabold font-heading text-[#FAF6EE]">DERBY<span class="text-[#F2B134]">2</span>PARTY</span>
+          </div>
+          <p class="text-xs text-[#FAF6EE]/60 leading-relaxed">
+            Pour les supporters qui aiment vivre le football africain en collectif. L'émotion du stade, les saveurs du continent, la musique au cœur de Paris.
+          </p>
+          <div class="text-xs text-[#F2B134] font-medium">
+            #LeStadeVientAVous &middot; #Derby2party
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div>
+          <h4 class="text-xs font-bold uppercase tracking-wider text-[#FAF6EE] mb-4">Événements</h4>
+          <ul class="space-y-2.5 text-xs text-[#FAF6EE]/70">
+            <li><a href="./#matchs" class="hover:text-[#F2B134] transition-colors">Coupe d'Afrique des Nations</a></li>
+            <li><a href="./#matchs" class="hover:text-[#F2B134] transition-colors">Grands Derbys Régionaux</a></li>
+            <li><a href="./#matchs" class="hover:text-[#F2B134] transition-colors">Qualifications Coupe du Monde</a></li>
+            <li><a href="./#billetterie" class="hover:text-[#F2B134] transition-colors">Billetterie & Tarifs de Groupe</a></li>
+          </ul>
+        </div>
+
+        <!-- Experience & Capsule -->
+        <div>
+          <h4 class="text-xs font-bold uppercase tracking-wider text-[#FAF6EE] mb-4">Capsule & VIP</h4>
+          <ul class="space-y-2.5 text-xs text-[#FAF6EE]/70">
+            <li><a href="./collection" class="text-[#F2B134] font-bold">Maillots D2P × Maison Château Rouge</a></li>
+            <li><a href="./vip-pass/" class="hover:text-[#F2B134] transition-colors flex items-center gap-1"><span>VIP Pass & Prediction Club</span><span class="text-[10px] text-[#F2B134]">★</span></a></li>
+            <li><a href="./#experience" class="hover:text-[#F2B134] transition-colors">DJ Sets Afrobeat & Ambiance</a></li>
+            <li><a href="./#parrainage" class="hover:text-[#F2B134] transition-colors">Pack Bande & Tables Réservées</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact & Reseaux -->
+        <div>
+          <h4 class="text-xs font-bold uppercase tracking-wider text-[#FAF6EE] mb-4">Rejoindre la communauté</h4>
+          <p class="text-xs text-[#FAF6EE]/60 mb-3">
+            Contact presse & collaborations : <br>
+            <a href="mailto:contact@derby2party.fr" class="text-[#F2B134] hover:underline font-semibold">contact@derby2party.fr</a>
+          </p>
+          <div class="flex items-center gap-3 pt-2">
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="w-8 h-8 rounded-full bg-white/10 hover:bg-[#F2B134] hover:text-[#0E0E0E] flex items-center justify-center transition-colors" aria-label="Instagram Derby2party">
+              <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            </a>
+            <a href="https://tiktok.com" target="_blank" rel="noopener noreferrer" class="w-8 h-8 rounded-full bg-white/10 hover:bg-[#F2B134] hover:text-[#0E0E0E] flex items-center justify-center transition-colors" aria-label="TikTok Derby2party">
+              <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64c.29 0 .58.04.85.12V9.4a6.33 6.33 0 0 0-1.12-.1 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.34-6.34V8.42c1.47.96 3.2 1.5 5.04 1.52v-3.25z"/></svg>
+            </a>
+            <a href="https://whatsapp.com" target="_blank" rel="noopener noreferrer" class="w-8 h-8 rounded-full bg-white/10 hover:bg-[#25D366] hover:text-white flex items-center justify-center transition-colors" aria-label="WhatsApp Derby2party">
+              <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.63C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2Z"/></svg>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Footer Bottom Bar -->
+      <div class="pt-8 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-[#FAF6EE]/50">
+        <div>
+          &copy; 2026 Derby2party SAS &middot; Collaboration officielle avec Maison Château Rouge. Tous droits réservés.
+        </div>
+        <div class="flex items-center gap-6">
+          <a href="./" class="hover:text-[#F2B134] transition-colors">Accueil</a>
+          <a href="./#billetterie" class="hover:text-[#F2B134] transition-colors">Billetterie</a>
+          <a href="#" class="hover:text-[#F2B134] transition-colors">Mentions Légales</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script>
+    // Mobile Hamburger Menu Toggle
+    const mobileBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    if (mobileBtn && mobileMenu) {
+      mobileBtn.addEventListener('click', () => {
+        const isHidden = mobileMenu.classList.contains('hidden');
+        if (isHidden) {
+          mobileMenu.classList.remove('hidden');
+          mobileBtn.setAttribute('aria-expanded', 'true');
+        } else {
+          mobileMenu.classList.add('hidden');
+          mobileBtn.setAttribute('aria-expanded', 'false');
+        }
+      });
+
+      mobileMenu.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+          mobileMenu.classList.add('hidden');
+          mobileBtn.setAttribute('aria-expanded', 'false');
+        });
+      });
+    }
+
+    // Scroll Navbar background styling
+    const navbar = document.getElementById('main-navbar');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 40) {
+        navbar.classList.add('shadow-xl', 'border-white/15');
+      } else {
+        navbar.classList.remove('shadow-xl', 'border-white/15');
+      }
+    });
+  </script>
+</body>
+</html>
